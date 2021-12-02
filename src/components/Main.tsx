@@ -1,13 +1,12 @@
-import { Stack, StackProps } from '@chakra-ui/react'
+import { Flex } from "@chakra-ui/react";
+import { ReactChild, ReactChildren } from "react";
 
-export const Main = (props: StackProps) => (
-  <Stack
-    spacing="1.5rem"
-    width="100%"
-    maxWidth="48rem"
-    mt="-45vh"
-    pt="8rem"
-    px="1rem"
-    {...props}
-  />
-)
+type MainProps = {
+  children: ReactChild | ReactChild[] | ReactChildren | ReactChildren[];
+};
+
+export const Main = ({ children }: MainProps) => (
+  <Flex as="main" direction="column" width="100%" px="86px">
+    {children}
+  </Flex>
+);
