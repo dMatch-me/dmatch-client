@@ -31,7 +31,7 @@ export const GitcoinExplore = () => {
             Gitcoin
           </Text>
           <Text
-            font-size="23px"
+            fontSize="23px"
             fontWeight="500"
             my="20px"
             maxWidth="340px"
