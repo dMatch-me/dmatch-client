@@ -14,9 +14,7 @@ const Index = () => (
     <Main></Main>
 
     <DarkModeSwitch />
-    <Footer>
-      <Text>Copyright © 2022, dMatch.xyz</Text>
-    </Footer>
+    <Footer />
   </Container>
 );
 
