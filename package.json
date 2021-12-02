@@ -1,6 +1,7 @@
 {
-  "name": "oito-dapp-template",
+  "name": "dmatch-client",
   "version": "1.0.0",
+  "author": "codingsh <codingsh@pm.me>",
   "license": "MIT",
   "private": true,
   "scripts": {

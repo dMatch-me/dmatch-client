@@ -4,7 +4,6 @@ import { browserName, CustomView } from "react-device-detect";
 
 import { Counter } from "../components/Counter";
 
-
 export const BrowserView = ({ title }: { title: string }) => (
   <>
     <CustomView condition={browserName === "Safari"}>
@@ -25,7 +24,6 @@ export const BrowserView = ({ title }: { title: string }) => (
           bgClip="text"
         >
           <Heading fontSize="6vw">{title}</Heading>
-          <Counter />
         </Flex>
       </>
     </CustomView>
@@ -37,5 +35,5 @@ export const Hero = ({ title }: { title: string }) => (
 );
 
 Hero.defaultProps = {
-  title: "oito.work",
+  title: "dMatch",
 };

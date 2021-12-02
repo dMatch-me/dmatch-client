@@ -15,47 +15,18 @@ import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
 
+
+
 const Index = () => (
   <Container minHeight="100vh">
     <Hero />
     <Main>
-      <Text>
-        DApp Template <Code>Ethers</Code> + <Code>Next.js</Code> +{" "}
-        <Code>chakra-ui</Code>+ <Code>Mobx</Code> + <Code>typescript</Code>.
-      </Text>
-
-      <List spacing={3} my={0}>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://mobx.js.org/react-integration.html" flexGrow={1} mr={2}>
-            Mobx <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
     </Main>
 
     <DarkModeSwitch />
     <Footer>
-      <Text>Oito.Work</Text>
+      <Text>Copyright © 2022, dMatch.xyz</Text>
     </Footer>
-    <CTA />
   </Container>
 );
 
