@@ -5,6 +5,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { GitcoinExplore } from "../components/GitcoinExplore";
 import { TinderDaoMaker } from "../components/TinderDaoMaker";
+import { TestimonialMatch } from "../components/TestimonialMatch";
 
 const Index = () => (
   <Container>
@@ -13,6 +14,7 @@ const Index = () => (
     <Main>
       <GitcoinExplore />
       <TinderDaoMaker />
+      <TestimonialMatch />
     </Main>
 
     <DarkModeSwitch />
