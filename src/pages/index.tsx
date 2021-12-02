@@ -1,32 +1,26 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from "@chakra-ui/react";
-import { CheckCircleIcon, LinkIcon } from "@chakra-ui/icons";
-
-import { Hero } from "../components/Hero";
 import { Container } from "../components/Container";
 import { Main } from "../components/Main";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
-import { CTA } from "../components/CTA";
 import { Footer } from "../components/Footer";
-
-
+import { Header } from "../components/Header";
+import { GitcoinExplore } from "../components/GitcoinExplore";
+import { TinderDaoMaker } from "../components/TinderDaoMaker";
+import { TestimonialMatch } from "../components/TestimonialMatch";
+import { NewDao } from "../components/NewDao";
 
 const Index = () => (
-  <Container minHeight="100vh">
-    <Hero />
+  <Container>
+    <Header />
+
     <Main>
+      <GitcoinExplore />
+      <TinderDaoMaker />
+      <TestimonialMatch />
+      <NewDao />
     </Main>
 
     <DarkModeSwitch />
-    <Footer>
-      <Text>Copyright © 2022, dMatch.xyz</Text>
-    </Footer>
+    <Footer />
   </Container>
 );
 
