@@ -1,4 +1,12 @@
-import { Flex, Box, List, ListItem, Link, Text } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  List,
+  ListItem,
+  Link,
+  Text,
+  useColorMode,
+} from "@chakra-ui/react";
 import TwitterIcon from "../public/twitter-icon.svg";
 import Image from "next/image";
 
@@ -11,22 +19,44 @@ const links = [
 
 const currentYear = new Date().getFullYear();
 
-export const Footer = () => (
-  <Flex as="footer" w="100%" justify="space-between">
-    <Box as="nav">
-      <List d="flex" gridGap="16px">
-        {links.map(({ href, linkName }) => (
-          <ListItem key={linkName}>
-            <Link href={href} isExternal _hover={{}} _focus={{}}>
-              {linkName}
-            </Link>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+export const Footer = () => {
+  const { colorMode } = useColorMode();
 
-    <Image width={30} height={24} src={TwitterIcon.src} />
+  const color = { light: "white", dark: "black" };
+  return (
+    <Flex
+      as="footer"
+      w="100%"
+      justify="space-between"
+      color={color[colorMode]}
+      px="86px"
+      mb="65px"
+    >
+      <Box as="nav">
+        <List d="flex" gridGap="20px">
+          {links.map(({ href, linkName }) => (
+            <ListItem key={linkName}>
+              <Link
+                href={href}
+                fontWeight="500"
+                fontSize="15px"
+                isExternal
+                _hover={{}}
+                _focus={{}}
+              >
+                {linkName}
+              </Link>
+            </ListItem>
+          ))}
+        </List>
+      </Box>
+      <Box ml="-60px">
+        <Image width={30} height={24} src={TwitterIcon.src} />
+      </Box>
 
-    <Text>Copyright © {currentYear}, dMatch.xyz</Text>
-  </Flex>
-);
+      <Text fontWeight="500" fontSize="15px">
+        Copyright © {currentYear}, dMatch.xyz
+      </Text>
+    </Flex>
+  );
+};
