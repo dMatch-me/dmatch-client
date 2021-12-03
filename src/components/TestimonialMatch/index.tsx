@@ -37,7 +37,13 @@ export const TestimonialMatch = () => {
 
 const TestimonialMatchFlex = () => {
   return (
-    <Flex gridGap="40px" justify="center" mt="65px" mb="144px">
+    <Flex
+      direction={["column", , "row"]}
+      gridGap="40px"
+      justify="center"
+      mt="65px"
+      mb="144px"
+    >
       <Card width={279} height={384} />
       <Card width={279} height={384} />
       <Card width={279} height={384} />

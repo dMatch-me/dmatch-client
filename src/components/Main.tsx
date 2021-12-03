@@ -6,7 +6,7 @@ type MainProps = {
 };
 
 export const Main = ({ children }: MainProps) => (
-  <Flex as="main" direction="column" width="100%" px="86px">
+  <Flex as="main" direction="column" width="100%" px={["3%", "43px", "86px"]}>
     {children}
   </Flex>
 );
