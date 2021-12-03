@@ -26,10 +26,13 @@ export const Footer = () => {
   return (
     <Flex
       as="footer"
+      direction={["column", , "row"]}
       w="100%"
       justify="space-between"
+      align="center"
+      gridGap={["10px", , "0"]}
       color={color[colorMode]}
-      px="86px"
+      px={["3%", "43px", "86px"]}
       mb="65px"
     >
       <Box as="nav">
@@ -50,7 +53,7 @@ export const Footer = () => {
           ))}
         </List>
       </Box>
-      <Box ml="-60px">
+      <Box ml={["0", , "-60px"]}>
         <Image width={30} height={24} src={TwitterIcon.src} />
       </Box>
 

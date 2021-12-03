@@ -17,14 +17,14 @@ export const GitcoinExplore = () => {
   const color = { light: "white", dark: "black" };
   return (
     <Box as="section" justifyContent="flex-start" color={color[colorMode]}>
-      <Flex>
+      <Flex direction={["column", , "row"]}>
         <Card width={677} height={410} />
 
         <Box
           d="flex"
-          justifyContent="flex-end"
+          justifyContent={["center", , "flex-end"]}
           flexDirection="column"
-          w="537px"
+          w={["100%", , "537px"]}
           alignItems="center"
         >
           <Text fontSize="4xl" fontWeight="800">
@@ -65,7 +65,7 @@ const GitcoinExploreGrid = () => {
   return (
     <SimpleGrid
       maxW="1302px"
-      minChildWidth="390px"
+      minChildWidth={["100%", "390px"]}
       placeItems="center"
       spacing="45px 34px"
       mt="74px"
